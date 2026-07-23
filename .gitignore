@@ -1,0 +1,16 @@
+# Secrets — never commit real keys
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.python-version
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
