@@ -5,6 +5,9 @@ it researches the live web (SerpAPI / Google), then two agents turn that into a
 finished LinkedIn post: a **Researcher** drafts it and an **Editor** sharpens it
 and adds hashtags. You conduct; the agents do the work.
 
+> **Part of my Maven Lightning Lesson, [Become a One-Person Company: Build an AI Agent Crew](https://maven.com/p/e9d2a5/become-a-one-person-company-build-an-ai-agent-crew).**
+> We build this agent live. The recording is shared with everyone who registers.
+
 ## Files
 - `agent.py` — the final two-agent version (Researcher -> Editor hand-off).
 - `agent_single.py` — the earlier one-agent version (just the Researcher), for reference.
