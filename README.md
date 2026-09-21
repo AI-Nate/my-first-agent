@@ -38,9 +38,19 @@ You should see it research the topic, then print a **DRAFT (Researcher)** and a
 Try the one-agent version too: `python agent_single.py "AI agents for beginners"`
 
 ## Keys
-- **SerpAPI** — free tier covers this: https://serpapi.com
-- **Azure OpenAI** — this code uses the `AzureOpenAI` client and the deployment
-  name `gpt-5.6-sol` (matches the live demo). Fill the `AZURE_OPENAI_*` values in `.env`.
+
+You need two: one for web search, one for the model.
+
+- **SerpAPI** (search) — free tier covers this: https://serpapi.com
+- **The model** — two routes. Pick one:
+  - **Standard OpenAI — start here if you are new.** One key, one signup:
+    https://platform.openai.com/api-keys. Set a spending cap first on
+    https://platform.openai.com/settings/organization/limits, then follow
+    *Want to use standard OpenAI instead of Azure?* below.
+  - **Azure OpenAI** — what the video runs on, and the heavier signup: you
+    create your own Azure resource and your own deployment, then put ITS name
+    in `AZURE_OPENAI_DEPLOYMENT`. The name in the video is a private deployment
+    and will not work on your account.
 
 ### Want to use standard OpenAI instead of Azure?
 The code is identical apart from the client. In `agent.py` (and `agent_single.py`):
